@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝙰𝙳-𝚃𝚎𝚌𝚑 𝙸𝚗𝚌.</title>
+  <!-- Font Awesome CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      color: #fff;
+      font-family: Montserrat;
+      background: linear-gradient(to bottom, black, blue); /* Light to deep blue gradient */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      background: none;
+      border-radius: 10px;
+       text-align: left; /* Align all content to the left */
+    }
+  
+.h1 {
+      font-size: 3em;
+         }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a  {
+      display: inline-flex;
+      margin: 8px;
+      padding: 10px;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      justify-content: center; 
+      align-items: center;
+      background: white;
+      color: #005bff;
+      font-size: 1.2em;
+      text-decoration: none;
+      cursor: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+  
+.circle-icon i {
+  font-size: 20px; /* Adjust the font size of the icon */
+}
+    .social-icons a:hover {
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="h1">404</h1>
+    <h1>Page Not Found</h1>
+    <p>The page you have requested could not be found.</p>
+    <p>If you feel this may be an error, please contact us.</p>
+    <div class="social-icons">
+       <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+       <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+       <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>     
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>    
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+     </div>
+  </div>
+  <script>
+    // Example of interactivity for the "Contact us" link
+    document.getElementById("contact-link").addEventListener("click", function(event) {
+      event.preventDefault();
+      alert("Contact us at: support@example.com");
+    });
+  </script>
+</body>
+</html>

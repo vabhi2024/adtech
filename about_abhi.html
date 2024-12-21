@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>𝙰𝙳-𝚃𝚎𝚌𝚑 𝙸𝚗𝚌.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ 
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      color: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-family: 'Deepakk';
+      background-image: url('background.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+ @font-face {
+      font-family: 'Deepakk';
+      src: url('deepakk.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+  .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000; 
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      color:#fff;
+      background-color: darkslategrey;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo {
+      margin-right: 50px;
+      height: 18px;
+      width: 155px;
+      border: none;
+    }
+
+    .list {
+      font-size: 16px;
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      width: 100%;
+    }
+
+.menu {
+      display: flex;
+    }
+  
+  #toggler {
+      display: none;
+    }
+
+    .navbar label {
+      display: none;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      #toggler:checked ~ .menu {
+        max-height: 100%;
+      }
+    }
+
+a:hover{
+  color: yellow;
+}
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      color: white;
+      padding: 10px
+     }
+
+    header h1 {
+      margin: 0;
+    }
+    
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+
+
+    .img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      animation: smoothPulse 2.5s infinite ease-in-out; /* Smooth pulse animation */
+    }
+
+    @keyframes smoothPulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 255, 1); /* No glow */
+      }
+      50% {
+        box-shadow: 0 0 30px 15px rgba(0, 255, 255, 1); /* Bright glow */
+      }
+      100% {
+        box-shadow: 0 0 50px 5em rgba(0, 255, 255, 0); /* Faded glow */
+      }    
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    
+h3 {
+      font-size: 18px;
+      color: #fff;
+    }
+    
+p {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    
+main {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+      margin: 5px;
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background: none;
+      font: bold 16px georgia;
+  }
+
+    button:hover {
+     --hover: #0ff;
+      background: darkblue;
+     animation: btn 1s;
+     box-shadow: 0 0 0 5em transparent;
+     }
+
+   @keyframes btn {
+   0% {
+   box-shadow: 0 0 0 0 var(--hover);
+   }
+     }
+   
+a {
+  color: #fff;
+ text-decoration: none;
+  cursor: none;
+}
+
+    .social-icons i {
+      margin: 10px;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .social-icons i:hover {
+      color: lightgreen;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: none;
+      margin-top: auto;
+    }
+    footer h4 {
+      margin: 0;
+    }
+    footer p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header + Navbar -->
+   <nav class="navbar">
+    <img class="logo" src="home.png"></span>
+    <input type="checkbox" id="toggler">
+    <label for="toggler">☰</label>
+    <div class="menu">
+      <ul class="list">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#programme">Programmes</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#footer">Contact us</a>
+      </ul>
+    </div>
+  </nav>
+
+<div class="content">
+  <div class="card">
+    <img class="img" src="about_abhi.png" alt="Profile">
+    <h1>Mr. Abhi Verma</h1>
+    <h3>( Chief Excutive CEO )</h3>
+    <br>
+    <h3>MCEA M.Tech Qualified Engineer</h3>
+    <br>
+    <h3>Digital Electronics & Web Designer</h3>
+    <br>
+      <main>
+      <button><a href="http://wa.me/+917054033320?text=*Hello Sir !*">Contact Me</a></button>
+      <button><a href="http://ind-abhi.netlify.app/">Hire Me</a></button>
+        </main>
+  
+    <br>
+    <div class="social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <h4>--- Thank ❤️ You ---</h4>
+  <p>© - 2025 All rights reserved by AD-Tech Inc.</p>
+</footer>
+
+</body>
+</html>
