@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>𝙰𝙳-𝚃𝚎𝚌𝚑 𝙸𝚗𝚌.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ 
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      color: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-family: 'Deepakk';
+      background-image: url('background.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+ @font-face {
+      font-family: 'Deepakk';
+      src: url('deepakk.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+  .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000; 
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      color:#fff;
+      background-color: darkslategrey;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo {
+      margin-right: 50px;
+      height: 18px;
+      width: 155px;
+      border: none;
+    }
+
+    .list {
+      font-size: 16px;
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      width: 100%;
+    }
+
+.menu {
+      display: flex;
+    }
+  
+  #toggler {
+      display: none;
+    }
+
+    .navbar label {
+      display: none;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      #toggler:checked ~ .menu {
+        max-height: 100%;
+      }
+    }
+
+a:hover{
+  color: yellow;
+}
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      color: white;
+      padding: 10px
+     }
+
+  
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: none;
+      margin-top: auto;
+    }
+    footer h4 {
+      margin: 0;
+    }
+    footer p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header + Navbar -->
+   <nav class="navbar">
+    <img class="logo" src="home.png"></span>
+    <input type="checkbox" id="toggler">
+    <label for="toggler">☰</label>
+    <div class="menu">
+      <ul class="list">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#programme">Programmes</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#footer">Contact us</a>
+      </ul>
+    </div>
+  </nav>
+
+<iframe src="https://forms.gle/hz4Cj8HBQCDWiTTy6" width="100%" height="100%" frameborder="0"></iframe>
+
+<br>
+
+<footer>
+  <h4>--- Thank ❤️ You ---</h4>
+  <p>© - 2025 All rights reserved by AD-Tech Inc.</p>
+</footer>
+
+</body>
+</html>
