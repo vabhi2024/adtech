@@ -365,6 +365,61 @@ input:focus, textarea:focus {
    }
      }
 
+/* F List */
+
+#abhi-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abhi-linkLeft {
+  display: flex;
+  justify-content: space-between;
+}
+
+#MenuTitle {
+  font-size: 16px;
+  display: flex;
+  width: 80%;
+  margin-left: 10px;
+  }
+
+.fList {
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+  .abhi-linkLeft{
+   width: 85%;
+  }
+          
+    a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  .fList button {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    border: 1.5px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: none;
+    margin-top: 10px;
+  transition: 0.5s ease-in-out;
+  background: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);    
+}
+
+.fList button:hover {
+  background: darkblue;
+  border: 1px solid #000;
+}
+
 /* Footer */
 
 .ftr {
