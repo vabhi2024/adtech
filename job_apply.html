@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>𝙰𝙳-𝚃𝚎𝚌𝚑 𝙸𝚗𝚌.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      color: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-family: 'Deepakk';
+      background-image: url('background.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+ @font-face {
+      font-family: 'Deepakk';
+      src: url('deepakk.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+  .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000; 
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      color:#fff;
+      background-color: darkslategrey;
+      padding: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo {
+      margin-right: 50px;
+      height: 18px;
+      width: 155px;
+      border: none;
+    }
+
+    .list {
+      font-size: 16px;
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      width: 100%;
+    }
+
+.menu {
+      display: flex;
+    }
+  
+  #toggler {
+      display: none;
+    }
+
+    .navbar label {
+      display: none;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      #toggler:checked ~ .menu {
+        max-height: 100%;
+      }
+    }
+
+a:hover{
+  color: yellow;
+}
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      color: white;
+      padding: 10px
+     }
+
+    
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: none;
+      margin-top: auto;
+    }
+    footer h4 {
+      margin: 0;
+    }
+    footer p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #fff;
+    }
+  
+  
+  .application {
+      background: teal;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid darkblue;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .date-fields {
+      display: flex;
+      gap: 10px;
+    }
+
+    .date-fields input {
+      width: calc(33.33% - 6.66px); /* Equal spacing for three fields */
+      text-align: center;
+    }
+
+.book-btn {
+  width: 100%;
+  color: white;
+  background: black;
+  border: 1px solid black;
+}
+
+.book-btn:hover {
+  width: 100%;
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header + Navbar -->
+   <nav class="navbar">
+    <img class="logo" src="home.png"></span>
+    <input type="checkbox" id="toggler">
+    <label for="toggler">☰</label>
+    <div class="menu">
+      <ul class="list">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#programme">Programmes</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#footer">Contact us</a>
+      </ul>
+    </div>
+  </nav>
+
+<br>
+<h1 style="font-size:22px">--- Application Form ---</h1>
+ <!-- Header Section -->
+           
+   <!-- Quick Links Section -->
+    <section class="quick-links">
+         <div class="application">
+    <form class="form" id="job-form">
+      <label class="slide slide-right hidden" for="name">--- Your Name ---</label>
+      <input class="input" type="text" id="name" placeholder="Enter your name" required>
+
+      <label class="slide slide-left hidden" for="mobile">--- Mobile Number ---</label>
+      <input class="input" type="tel" id="mobile" placeholder="Enter your mobile number" required>
+
+      <label class="slide slide-right hidden" for="email">--- Email ID ---</label>
+      <input class="input" type="email" id="email" placeholder="Enter Email ID" required>
+
+      <label class="slide slide-left hidden" for="todayDate">--- Today’s Date ---</label>
+      <input style="background:white" class="input" type="text" id="todayDate" placeholder="Fatching from server..."disabled>
+
+      <label class="slide slide-right hidden">--- Date Of Birth ---</label>
+      <div class="date-fields">
+        <input class="input" type="text" id="Day" placeholder="DD" min="1" max="31" maxlength="2" required>
+        <input class="input" type="text" id="Month" placeholder="MM" min="1" max="12" maxlength="2" required>
+        <input class="input" type="text" id="Year" placeholder="YYYY" min="2024" maxlength="4" required>
+      </div>
+
+      <label class="slide slide-left hidden"for="address">--- Your Address ---</label>
+      <input class="input" type="text" id="address" placeholder="Enter Your Address" required>
+
+      <label class="slide slide-right hidden" for="qualification">--- Your Qualification ---</label>
+      <input class="input" type="text" id="qualification" placeholder="Enter Complete Digree/diploma" required>
+
+      <label class="slide slide-left hidden" for="Experience">--- Enter Experience ---</label>
+      <input class="input" type="number" id="Experience" placeholder="Enter work Experience Year" required>
+      
+      <label class="slide slide-right hidden" for="job-position">--- Select Job Postision ---</label>
+      <select style="outline:none" class="input" id="job-position" required>
+        <option value="hidden" hidden>Select Job Postision</option>
+        <option value="Apps Design & Development">Apps Design & Development</option>
+        <option value="Web Design & Development">Web Design & Development</option>
+        <option value="Graphics Design & Development">Graphics Design & Development</option>
+        <option value="Data management & Security System">Data management & Security System</option>
+        <option value="others">Others</option>
+      </select>
+      
+   <main style="display:flex; flex-direction:row; gap:10px;">
+      <button class="book-btn" type="reset">Reset</button>
+      <button class="book-btn" type="submit">Submit</button>
+        </main>
+    </form>
+  </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <h4>--- Thank ❤️ You ---</h4>
+  <p>© - 2025 All rights reserved by AD-Tech Inc.</p>
+</footer>
+<script src="job_script.js"></script>
+</body>
+</html>
