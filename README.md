@@ -1,4 +1,4 @@
-## Hi there 👋
+# Adtech 👋
 designed by adtech inc.
 developed by adtech inc.
 host by netlify 
